@@ -6,12 +6,14 @@ body {
   }
   
   h1 {
+    color: #5d6d68;
     font-size: 30px;
     margin: 0 0 10px 0;
   }
 
   h6 {
       display: inline;
+      font-size: 15px;
       margin: 0 auto 5px auto;
   }
 
@@ -27,6 +29,14 @@ body {
   #inputs {
     padding: 10px 10px 10px 10px;
     margin: auto;
+  }
+
+  #playerInput {
+      background-color: #93B7A9;
+  }
+
+  #submitter {
+      background-color: #93B7A9;
   }
 
   p {
