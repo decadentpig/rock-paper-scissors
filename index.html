@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href='style.css' rel='stylesheet'>
   </head>
 
   <body>
-  <main id='main-content'>
-  <h1>Scissors, paper or rock?</h1>
-  <form>
-    <input id='playerInput'>
-    <input type='submit' onclick='game()'>
-  </form>
-  <p></p>
-  </main>
-
-
-  <script src='script.js'></script>
+    <main id='main-content'>
+        <h1>Scissors, paper or rock?</h1>
+        <div>
+            <h6>YOU:</h6>
+            <h6 id='playerTally'></h6>
+            <br>
+            <h6>CPU:</h6>
+            <h6 id='computerTally'></h6>
+        </div>
+        <div id='inputs'>
+            <input id='playerInput'>
+            <button id='submitter' onclick='game()' onsubmit='return false'>Play!</button>
+        </div>
+        <p><i>(Results logged here.)</i></p>
+    </main>
+    <script src='script.js'></script>
   </body>
 </html>

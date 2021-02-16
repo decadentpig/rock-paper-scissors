@@ -8,7 +8,7 @@ function computerPlay(){
       case 2:
         return 'Scissors';
       default:
-        return `ERR: The computer failed to make a selection. Needed 0, 1 or 2. Got: ${random}`;
+        return `ERR: The computer failed to make a selection. \nNeeded 0, 1 or 2. Got: ${random}`;
     }
 }
   
@@ -38,34 +38,20 @@ function playRound(playerArg, computerArg){
         return `Draw! Both used ${playerArg}`
   
       default:
-        return `ERR: Unable to evaluate pair. Check for error in user input: ${playerArg}`
+        return `ERR: Unable to evaluate pair. \nCheck for error in user input: ${playerArg}`
     }
 }
-  
+
 function game(){
-    let playerTally = 0;
-    let computerTally = 0;
-  
-    for (let i = 0; i < 5; i++){
       // Fetch player and computer selections
-      let playerSelection = prompt('Scissors, paper or rock?');
+      let playerSelection = document.getElementById('playerInput').value;
       let computerSelection = computerPlay();
   
-      // Run match with selections, log result and add to tally
+      // Run match with selections, print result
       let result = playRound(playerSelection, computerSelection);
-  
-      if (result.indexOf('win') > -1) playerTally++;
-      if (result.indexOf('lose') > -1) computerTally++;
-      if (!playerSelection) playerTally = -1;
-      console.log(result);
-    }
-  
-    // Evaluate winner overall and print result
-    if (playerTally === -1) return console.log(`\nERR: No result returned, user provided incorrect input/s.`)
-    if (!playerTally && !computerTally || playerTally === computerTally){
-       return console.log(`\nDraw overall!`);
-    };
-    return (playerTally > computerTally) ? 
-      console.log(`\nPlayer wins ${playerTally} to ${computerTally}!`) : 
-      console.log(`\nComputer wins ${computerTally} to ${playerTally}...`);
-  } game();
+      document.querySelector('p').innerText = `${result}`;
+      
+      //Update tally
+      if (result.indexOf('win') > -1) document.getElementById('playerTally').innerHTML++;
+      if (result.indexOf('lose') > -1) document.getElementById('computerTally').innerHTML++;
+};

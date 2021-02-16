@@ -1,17 +1,34 @@
 body {
     display: grid;
     font-family: monospace;
-    background-color: #e6e6e6;
+    color: #7D928B;
+    background-color: #93B7A9;
   }
   
   h1 {
-    font-size: 19px;
+    font-size: 30px;
+    margin: 0 0 10px 0;
   }
-  
+
+  h6 {
+      display: inline;
+      margin: 0 auto 5px auto;
+  }
+
   #main-content {
-    margin: 6em auto 0 auto;
+    display: grid;
+    font-size: 18px;
+    background-color: #C1CDC5;
+    margin: 15em auto 20em auto;
+    padding: 25px 50px 35px 50px;
+    border-radius: 10px;
   }
   
-  form {
+  #inputs {
     padding: 10px 10px 10px 10px;
+    margin: auto;
+  }
+
+  p {
+      margin: auto;
   }
