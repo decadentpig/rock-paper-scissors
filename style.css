@@ -9,7 +9,17 @@ body {
   color: #7D928B;
   background-color: #93B7A9;
 }
-  
+
+#main-content {
+  display: grid;
+  width: 33%;
+  font-size: 18px;
+  background-color: #C1CDC5;
+  margin: 15em auto 20em auto;
+  padding: 25px 50px 35px 50px;
+  border-radius: 10px;
+}
+
 h1 {
   color: #5d6d68;
   font-size: 30px;
@@ -22,8 +32,25 @@ h6 {
   margin: 0 auto 5px auto;
 }
 
-#gamesTracker {
+#inputs-container {
+  padding: 10px 10px 10px 10px;
   margin: auto;
+}
+
+#playerInput, #pageButton {
+    background-color: #93B7A9;
+    padding: 0 5px 0 5px;
+    color: #5d6d68;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+p {
+  margin: auto;
+}
+
+#gamesTracker {
+  margin: 10px auto 0 auto;
   padding: 0 0 0px 0;
 }
 #gamesTracker h6{
@@ -31,49 +58,21 @@ h6 {
   font-size: 13px;
 }
 
-#resetter {
+#resetter, #toggle {
   margin: auto;
-  padding: 0 0 15px 0;
   font-size: 13px;
   color: #7D928B;
 }
-#resetter:visited {
+#resetter:visited, #toggle:visited {
   color: #7D928B;
 }
-#resetter:hover {
+#resetter:hover, #toggle:hover {
   color: #505E59;
 }
 
-#main-content {
-    display: grid;
-    width: 33%;
-    font-size: 18px;
-    background-color: #C1CDC5;
-    margin: 15em auto 20em auto;
-    padding: 25px 50px 35px 50px;
-    border-radius: 10px;
-}
-  
-#inputs-container {
-    padding: 10px 10px 10px 10px;
-    margin: auto;
-}
-
-#playerInput, #pageButton {
-      background-color: #93B7A9;
-      padding: 0 5px 0 5px;
-      color: #5d6d68;
-      font-size: 16px;
-      font-family: monospace;
-}
-
-p {
-  margin: auto;
-}
-
 #gameLog{
-  display: grid;
-  padding: 1px 0 0 0;
+  display: none; /** grid: toggled off by default **/
+  padding: 20px 0 0 0;
 }
 .logEntries{
   font-size: 13px;

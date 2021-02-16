@@ -19,13 +19,14 @@
             <input id='playerInput'>
             <button id='pageButton' onclick='game()' onsubmit='return false'>Play!</button>
         </div>
+        <p id='result'><i>(Results appear here.)</i></p>
         <div id='gamesTracker'>
           <h6>GAMES:</h6>
           <h6 id='gamesTally'>0</h6>
           <br>
         </div>
         <a href='' onclick='resetGame(); return false;' id='resetter'>RESET</a>
-        <p id='result'><i>(Results appear here.)</i></p>
+        <a href='' onclick='toggleLog(); return false;' id='toggle'>SHOW LOG</a>
         <div id='gameLog'></div>
     </main>
     <script src='script.js'></script>

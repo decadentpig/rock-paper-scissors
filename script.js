@@ -76,3 +76,14 @@ function resetGame(){
   document.querySelectorAll('.logEntries').forEach(logEntry => logEntry.remove());
   document.getElementById('playerInput').value = '';
 }
+
+function toggleLog(){
+  let log = document.getElementById('gameLog');
+  if (log.style.display === 'none'){
+    log.style.display = 'grid';
+    document.getElementById('toggle').innerText = 'HIDE LOG';
+  } else {
+    log.style.display = 'none';
+    document.getElementById('toggle').innerText = 'SHOW LOG';
+  }
+}
