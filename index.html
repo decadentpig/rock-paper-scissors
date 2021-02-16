@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+  </head>
 
-    </head>
-    <body>
+  <body>
+  <main id='main-content'>
+  <h1>Scissors, paper or rock?</h1>
+  <form>
+    <input id='playerInput'>
+    <input type='submit' onclick='game()'>
+  </form>
+  <p></p>
+  </main>
 
-        <script>
-            function computerPlay(){
-                let random = Math.floor(Math.random() * 3);
-                switch (random){
-                    case 0:
-                        return 'Rock';
-                    case 1:
-                        return 'Paper';
-                    case 2:
-                        return 'Scissors';
-                    default:
-                        return 'ERR';
-                }
-            }
-        </script>
 
-    </body>
+  <script src='script.js'></script>
+  </body>
 </html>

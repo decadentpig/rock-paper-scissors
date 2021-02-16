@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    font-family: monospace;
+    background-color: #e6e6e6;
+  }
+  
+  h1 {
+    font-size: 19px;
+  }
+  
+  #main-content {
+    margin: 6em auto 0 auto;
+  }
+  
+  form {
+    padding: 10px 10px 10px 10px;
+  }
