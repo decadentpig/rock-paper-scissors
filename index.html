@@ -9,16 +9,23 @@
         <h1>Scissors, paper or rock?</h1>
         <div>
             <h6>YOU:</h6>
-            <h6 id='playerTally'></h6>
+            <h6 id='playerTally'>0</h6>
             <br>
             <h6>CPU:</h6>
-            <h6 id='computerTally'></h6>
+            <h6 id='computerTally'>0</h6>
         </div>
         <div id='inputs'>
             <input id='playerInput'>
-            <button id='submitter' onclick='game()' onsubmit='return false'>Play!</button>
+            <button class='pagebuttons' onclick='game()' onsubmit='return false'>Play!</button>
         </div>
-        <p><i>(Results logged here.)</i></p>
+        <div id='gamesTracker'>
+          <h6>GAMES:</h6>
+          <h6 id='gamesTally'>0</h6>
+          <br>
+        </div>
+        <a href='' onclick='resetGame(); return false;' id='resetter'>RESET</a>
+        <p id='result'><i>(Results appear here.)</i></p>
+        <div id='gameLog'></div>
     </main>
     <script src='script.js'></script>
   </body>

@@ -1,44 +1,75 @@
 body {
-    display: grid;
-    font-family: monospace;
-    color: #7D928B;
-    background-color: #93B7A9;
-  }
+  display: grid;
+  font-family: monospace;
+  color: #7D928B;
+  background-color: #93B7A9;
+}
   
-  h1 {
-    color: #5d6d68;
-    font-size: 30px;
-    margin: 0 0 10px 0;
-  }
+h1 {
+  color: #5d6d68;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
 
-  h6 {
-      display: inline;
-      font-size: 15px;
-      margin: 0 auto 5px auto;
-  }
+h6 {
+  display: inline;
+  font-size: 15px;
+  margin: 0 auto 5px auto;
+}
 
-  #main-content {
+#gamesTracker {
+  margin: auto;
+  padding: 0 0 0px 0;
+}
+#gamesTracker h6{
+  margin: 0 auto 0 -5px;
+  font-size: 13px;
+}
+
+#resetter {
+  margin: auto;
+  padding: 0 0 15px 0;
+  font-size: 13px;
+  color: #7D928B;
+}
+#resetter:visited {
+  color: #7D928B;
+}
+#resetter:hover {
+  color: #505E59;
+}
+
+#main-content {
     display: grid;
     font-size: 18px;
     background-color: #C1CDC5;
     margin: 15em auto 20em auto;
     padding: 25px 50px 35px 50px;
     border-radius: 10px;
-  }
+}
   
-  #inputs {
+#inputs {
     padding: 10px 10px 10px 10px;
     margin: auto;
-  }
+}
 
-  #playerInput {
+#playerInput {
       background-color: #93B7A9;
-  }
+}
 
-  #submitter {
-      background-color: #93B7A9;
-  }
+.pagebuttons {
+  background-color: #93B7A9;
+}
 
-  p {
-      margin: auto;
-  }
+p {
+  margin: auto;
+}
+
+#gameLog{
+  display: grid;
+  padding: 1px 0 0 0;
+}
+.logEntries{
+  font-size: 13px;
+  margin: 3px auto;
+}
