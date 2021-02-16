@@ -44,35 +44,35 @@ function playRound(playerArg, computerArg){
 }
 
 function game(){
-// Fetch player and computer selections
-let playerSelection = document.getElementById('playerInput').value;
-let computerSelection = computerPlay();
+  // Fetch player and computer selections
+  let playerSelection = document.getElementById('playerInput').value;
+  let computerSelection = computerPlay();
 
-// Run match with selections, print result
-let result = playRound(playerSelection, computerSelection);
-document.querySelector('p').innerText = `${result}`;
-    
-//Update tallies
-if (result.indexOf('ERR') === -1) document.getElementById('gamesTally').innerHTML++;
-if (result.indexOf('win') > -1) document.getElementById('playerTally').innerHTML++;
-if (result.indexOf('lose') > -1) document.getElementById('computerTally').innerHTML++;
+  // Run match with selections, print result
+  let result = playRound(playerSelection, computerSelection);
+  document.querySelector('p').innerText = `${result}`;
+      
+  //Update tallies
+  if (result.indexOf('ERR') === -1) document.getElementById('gamesTally').innerHTML++;
+  if (result.indexOf('win') > -1) document.getElementById('playerTally').innerHTML++;
+  if (result.indexOf('lose') > -1) document.getElementById('computerTally').innerHTML++;
 
-//Update log
-let logDiv = document.querySelector('#gameLog');
-let para = document.createElement('p');
-para.setAttribute('class','logEntries')
-para.textContent = `(${result})`;
-logDiv.prepend(para);
+  //Update log
+  let logDiv = document.querySelector('#gameLog');
+  let para = document.createElement('p');
+  para.setAttribute('class','logEntries')
+  para.textContent = `(${result})`;
+  logDiv.prepend(para);
 };
 
 function resetGame(){
-//Reset tallies
-document.getElementById('gamesTally').innerHTML = 0;
-document.getElementById('playerTally').innerHTML = 0;
-document.getElementById('computerTally').innerHTML = 0;
+  //Reset tallies
+  document.getElementById('gamesTally').innerHTML = 0;
+  document.getElementById('playerTally').innerHTML = 0;
+  document.getElementById('computerTally').innerHTML = 0;
 
-//Reset log, clear input field
-document.getElementById('result').innerHTML = '<i>(Results appear here.)</i>';
-document.querySelectorAll('.logEntries').forEach(logEntry => logEntry.remove());
-document.getElementById('playerInput').value = '';
+  //Reset log, clear input field
+  document.getElementById('result').innerHTML = '<i>(Results appear here.)</i>';
+  document.querySelectorAll('.logEntries').forEach(logEntry => logEntry.remove());
+  document.getElementById('playerInput').value = '';
 }
