@@ -5,14 +5,14 @@
 
 body {
   display: grid;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
   color: #7D928B;
   background-color: #93B7A9;
 }
 
 #main-content {
   display: grid;
-  width: 33%;
+  max-width: 33%;
   font-size: 18px;
   background-color: #C1CDC5;
   margin: 15em auto 20em auto;
@@ -42,7 +42,7 @@ h6 {
   padding: 5px;
   color: #5d6d68;
   font-size: 13px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
 }
 #player-input:focus {
   outline: none;
