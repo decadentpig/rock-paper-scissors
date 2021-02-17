@@ -45,45 +45,45 @@ function playRound(playerArg, computerArg){
 
 function game(){
   // Fetch player and computer selections
-  let playerSelection = document.getElementById('playerInput').value;
+  let playerSelection = document.getElementById('player-input').value;
   let computerSelection = computerPlay();
 
   // Run match with selections, print result
   let result = playRound(playerSelection, computerSelection);
-  document.querySelector('p').innerText = `${result}`;
+  document.querySelector('p').innerHTML = `${result}`;
       
   //Update tallies
-  if (result.indexOf('ERR') === -1) document.getElementById('gamesTally').innerHTML++;
-  if (result.indexOf('win') > -1) document.getElementById('playerTally').innerHTML++;
-  if (result.indexOf('lose') > -1) document.getElementById('computerTally').innerHTML++;
+  if (result.indexOf('ERR') === -1) document.getElementById('games-tally').innerHTML++;
+  if (result.indexOf('win') > -1) document.getElementById('player-tally').innerHTML++;
+  if (result.indexOf('lose') > -1) document.getElementById('computer-tally').innerHTML++;
 
   //Update log
-  let logDiv = document.querySelector('#gameLog');
+  let logDiv = document.querySelector('#game-log');
   let para = document.createElement('p');
-  para.setAttribute('class','logEntries')
+  para.setAttribute('class','log-entries')
   para.textContent = `(${result})`;
   logDiv.prepend(para);
 };
 
 function resetGame(){
   //Reset tallies
-  document.getElementById('gamesTally').innerHTML = 0;
-  document.getElementById('playerTally').innerHTML = 0;
-  document.getElementById('computerTally').innerHTML = 0;
+  document.getElementById('games-tally').innerHTML = 0;
+  document.getElementById('player-tally').innerHTML = 0;
+  document.getElementById('computer-tally').innerHTML = 0;
 
   //Reset log, clear input field
   document.getElementById('result').innerHTML = '<i>(Results appear here.)</i>';
-  document.querySelectorAll('.logEntries').forEach(logEntry => logEntry.remove());
-  document.getElementById('playerInput').value = '';
+  document.querySelectorAll('.log-entries').forEach(logEntry => logEntry.remove());
+  document.getElementById('player-input').value = '';
 }
 
 function toggleLog(){
-  let log = document.getElementById('gameLog');
+  let log = document.getElementById('game-log');
   if (log.style.display === 'none'){
     log.style.display = 'grid';
-    document.getElementById('toggle').innerText = 'HIDE LOG';
+    document.getElementById('toggle').innerHTML = '<div id="arrow-hide"></div>';
   } else {
     log.style.display = 'none';
-    document.getElementById('toggle').innerText = 'SHOW LOG';
+    document.getElementById('toggle').innerHTML = '<div id="arrow-show"></div>';
   }
 }

@@ -37,7 +37,7 @@ h6 {
   margin: auto;
 }
 
-#playerInput, #pageButton {
+#player-input, #page-button {
     background-color: #93B7A9;
     padding: 0 5px 0 5px;
     color: #5d6d68;
@@ -49,11 +49,11 @@ p {
   margin: auto;
 }
 
-#gamesTracker {
+#games-tracker {
   margin: 10px auto 0 auto;
   padding: 0 0 0px 0;
 }
-#gamesTracker h6{
+#games-tracker h6{
   margin: 0 auto 0 -5px;
   font-size: 13px;
 }
@@ -70,11 +70,28 @@ p {
   color: #505E59;
 }
 
-#gameLog{
+#game-log{
   display: none; /** grid: toggled off by default **/
   padding: 20px 0 0 0;
 }
-.logEntries{
+.log-entries{
   font-size: 13px;
   margin: 3px auto;
+}
+
+#arrow-show {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #a7b1aa;
+  margin: 10px auto;
+}
+#arrow-hide {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #a7b1aa;
+  margin: 10px auto;
 }

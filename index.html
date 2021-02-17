@@ -10,24 +10,26 @@
         <h1>Scissors, paper or rock?</h1>
         <div>
             <h6>YOU:</h6>
-            <h6 id='playerTally'>0</h6>
+            <h6 id='player-tally'>0</h6>
             <br>
             <h6>CPU:</h6>
-            <h6 id='computerTally'>0</h6>
+            <h6 id='computer-tally'>0</h6>
         </div>
         <div id='inputs-container'>
-            <input id='playerInput'>
-            <button id='pageButton' onclick='game()' onsubmit='return false'>Play!</button>
+            <input id='player-input'>
+            <button id='page-button' onclick='game()' onsubmit='return false'>Play!</button>
         </div>
         <p id='result'><i>(Results appear here.)</i></p>
-        <div id='gamesTracker'>
+        <div id='games-tracker'>
           <h6>GAMES:</h6>
-          <h6 id='gamesTally'>0</h6>
+          <h6 id='games-tally'>0</h6>
           <br>
         </div>
         <a href='' onclick='resetGame(); return false;' id='resetter'>RESET</a>
-        <a href='' onclick='toggleLog(); return false;' id='toggle'>SHOW LOG</a>
-        <div id='gameLog'></div>
+        <a href='' onclick='toggleLog(); return false;' id='toggle'>
+          <div id='arrow-show'></div>
+        </a>
+        <div id='game-log'></div>
     </main>
     <script src='script.js'></script>
   </body>
