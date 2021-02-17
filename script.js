@@ -52,12 +52,12 @@ function game(){
   let result = playRound(playerSelection, computerSelection);
   document.querySelector('p').innerHTML = `${result}`;
       
-  //Update tallies
+  // Update tallies
   if (result.indexOf('ERR') === -1) document.getElementById('games-tally').innerHTML++;
   if (result.indexOf('win') > -1) document.getElementById('player-tally').innerHTML++;
   if (result.indexOf('lose') > -1) document.getElementById('computer-tally').innerHTML++;
 
-  //Update log
+  // Update log
   let logDiv = document.querySelector('#game-log');
   let para = document.createElement('p');
   para.setAttribute('class','log-entries')
@@ -66,16 +66,16 @@ function game(){
 };
 
 function resetGame(){
-  //Reset tallies
+  // Reset tallies
   document.getElementById('games-tally').innerHTML = 0;
   document.getElementById('player-tally').innerHTML = 0;
   document.getElementById('computer-tally').innerHTML = 0;
 
-  //Reset log, clear input field
+  // Reset log, clear input field
   document.getElementById('result').innerHTML = '<i>(Results appear here.)</i>';
   document.querySelectorAll('.log-entries').forEach(logEntry => logEntry.remove());
   document.getElementById('player-input').value = '';
-}
+};
 
 function toggleLog(){
   let log = document.getElementById('game-log');
@@ -85,5 +85,5 @@ function toggleLog(){
   } else {
     log.style.display = 'none';
     document.getElementById('toggle').innerHTML = '<div id="arrow-show"></div>';
-  }
-}
+  };
+};
