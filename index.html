@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Rock, Paper, Scissors</title>
-    <link href='style.css' rel='stylesheet'>
+    <link id='theme' href='style.css' rel='stylesheet' type='text/css'>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -21,6 +21,14 @@
         <div id='inputs-container'>
             <input id='player-input'>
             <button id='page-button' onclick='game()' onsubmit='return false'>Play!</button>
+            <div id='theme-selectors'>
+              <a href='' onclick='setTheme("style.css"); return false;'>
+                <div id='mint-square'></div>
+              </a>
+              <a href='' onclick='setTheme("style2.css"); return false;'>
+                <div id='desert-square'></div>
+              </a>
+            </div>
         </div>
         <p id='result'><i>(Results appear here.)</i></p>
         <div id='games-tracker'>
@@ -29,7 +37,7 @@
           <br>
         </div>
         <a href='' onclick='resetGame(); return false;' id='resetter'>RESET</a>
-        <a href='' onclick='toggleLog(); return false;' id='toggle'>
+        <a href='' onclick='toggleLog(); return false;' id='toggle-log'>
           <div id='arrow-show'></div>
         </a>
         <div id='game-log'></div>

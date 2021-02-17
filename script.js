@@ -81,9 +81,14 @@ function toggleLog(){
   let log = document.getElementById('game-log');
   if (log.style.display === 'none'){
     log.style.display = 'grid';
-    document.getElementById('toggle').innerHTML = '<div id="arrow-hide"></div>';
+    document.getElementById('toggle-log').innerHTML = '<div id="arrow-hide"></div>';
   } else {
     log.style.display = 'none';
-    document.getElementById('toggle').innerHTML = '<div id="arrow-show"></div>';
+    document.getElementById('toggle-log').innerHTML = '<div id="arrow-show"></div>';
   };
 };
+
+function setTheme(selection) {
+  let link = document.getElementById('theme');
+  link.setAttribute('href', selection);
+}

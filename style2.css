@@ -6,22 +6,22 @@
 body {
   display: grid;
   font-family: 'Press Start 2P', monospace;
-  color: #7D928B;
-  background-color: #93B7A9;
+  color: #80786A;
+  background-color: #CDC0AA;
 }
 
 #main-content {
   display: grid;
   max-width: 33%;
   font-size: 18px;
-  background-color: #C1CDC5;
+  background-color: #FFEFD4;
   margin: 15em auto 20em auto;
   padding: 25px 50px 10px 50px;
   border-radius: 10px;
 }
 
 h1 {
-  color: #5d6d68;
+  color: #806A44;
   font-size: 15px;
   margin: 0 auto 10px auto;
 }
@@ -55,15 +55,15 @@ h6 {
 }
 
 #player-input, #page-button {
-  background-color: #93B7A9;
+  background-color: #CDC0AA;
   padding: 5px;
-  color: #5d6d68;
+  color: #FFD387;
   font-size: 13px;
   font-family: 'Press Start 2P', monospace;
 }
 #player-input:focus {
   outline: none;
-  border-color: #5d6d68;
+  border-color: #CDC0AA;
 }
 
 p {
@@ -83,13 +83,13 @@ p {
 #resetter, #toggle-log {
   margin: 5px auto 0 auto;
   font-size: 10px;
-  color: #7D928B;
+  color: #80786A;
 }
 #resetter:visited, #toggle-log:visited {
-  color: #7D928B;
+  color: #80786A;
 }
 #resetter:hover, #toggle-log:hover {
-  color: #505E59;
+  color: #666054;
 }
 
 #game-log{
@@ -97,7 +97,7 @@ p {
   padding: 5px 0 15px 0;
 }
 .log-entries{
-  color: #8ba098;
+  color: #a39988;
   font-size: 10px;
   margin: 3px auto;
 }
@@ -107,7 +107,7 @@ p {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid #a7b1aa;
+  border-top: 10px solid #a39988;
   margin: 10px auto;
 }
 #arrow-hide {
@@ -115,12 +115,12 @@ p {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 10px solid #a7b1aa;
+  border-bottom: 10px solid #a39988;
   margin: 10px auto;
 }
 #arrow-show:hover{
-  border-top: 10px solid #929b95;
+  border-top: 10px solid #80786b;
 }
 #arrow-hide:hover {
-  border-bottom: 10px solid #929b95;
+  border-bottom: 10px solid #80786b;
 }
