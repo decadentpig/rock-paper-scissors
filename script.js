@@ -14,8 +14,8 @@ function computerPlay(){
 
 function playRound(playerArg, computerArg){
   // Uniform case, unless null
-  let oldInput = playerArg;
   if (playerArg) playerArg = playerArg.toUpperCase()[0] + playerArg.toLowerCase().slice(1);
+  if (!playerArg) playerArg = '?+';
 
   // Find the outcome
   let contest = playerArg + computerArg;
@@ -39,7 +39,7 @@ function playRound(playerArg, computerArg){
       return `Draw! Both used ${playerArg}`
 
     default:
-      return `ERR: Unable to evaluate pair. \nCheck for error in user input: ${oldInput}`
+      return `ERR: Unable to evaluate pair: ${contest}`
   }
 }
 

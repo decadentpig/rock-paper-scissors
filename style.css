@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  font-family: monospace;
+  font-family: 'Press Start 2P', cursive;
   color: #7D928B;
   background-color: #93B7A9;
 }
@@ -16,36 +16,37 @@ body {
   font-size: 18px;
   background-color: #C1CDC5;
   margin: 15em auto 20em auto;
-  padding: 25px 50px 35px 50px;
+  padding: 25px 50px 10px 50px;
   border-radius: 10px;
 }
 
 h1 {
   color: #5d6d68;
-  font-size: 30px;
+  font-size: 15px;
   margin: 0 auto 10px auto;
 }
 
 h6 {
   display: inline;
-  font-size: 15px;
+  font-size: 10px;
   margin: 0 auto 5px auto;
 }
 
 #inputs-container {
   padding: 10px 10px 10px 10px;
-  margin: auto;
+  margin: 10px auto;
 }
 
 #player-input, #page-button {
     background-color: #93B7A9;
-    padding: 0 5px 0 5px;
+    padding: 5px;
     color: #5d6d68;
-    font-size: 16px;
-    font-family: monospace;
+    font-size: 13px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 p {
+  font-size: 12px;
   margin: auto;
 }
 
@@ -55,12 +56,12 @@ p {
 }
 #games-tracker h6{
   margin: 0 auto 0 -5px;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 #resetter, #toggle {
-  margin: auto;
-  font-size: 13px;
+  margin: 5px auto 0 auto;
+  font-size: 10px;
   color: #7D928B;
 }
 #resetter:visited, #toggle:visited {
@@ -72,10 +73,10 @@ p {
 
 #game-log{
   display: none; /** grid: toggled off by default **/
-  padding: 20px 0 0 0;
+  padding: 5px 0 0 0;
 }
 .log-entries{
-  font-size: 13px;
+  font-size: 10px;
   margin: 3px auto;
 }
 
